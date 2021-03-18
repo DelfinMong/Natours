@@ -48,9 +48,9 @@ body{
 
 .text-box{
     position: absolute;
-    top: 50%;
+    top: 40%;   /* top and left is in relation to the parent element */
     left: 50%;
-    transform: translate(-50%,-50%);  /* 50% relative to the elements width and height*/
+    transform: translate(-50%,-50%);  /* 50% is relative to the elements width and height*/
     
 }
 
@@ -71,4 +71,18 @@ body{
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 17.4px;
+}
+
+@keyframes moveInleft {
+    0% {
+        opacity: 0;
+    }
+
+    80% {
+
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
