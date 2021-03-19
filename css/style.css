@@ -43,6 +43,10 @@ body{
 }
 
 .logo {
+    animation: moveInright 1s ease-in-out;
+}
+
+.logo {
     height: 35px;
 }
 
@@ -57,6 +61,7 @@ body{
 .heading-primary {
     color: #fff;
     text-transform: uppercase;
+    backface-visibility: hidden; /* back part of the element is not visible*/
 }
 
 .heading-primary-main {
@@ -67,7 +72,7 @@ body{
 
     animation-name: moveInleft;
     animation-duration: 1s;
-    animation-delay: 3s;
+    animation-timing-function: ease-out;
 }
 
 .heading-primary-sub {
@@ -76,13 +81,17 @@ body{
     font-weight: 700;
     letter-spacing: 17.4px;
 
-    animmation: moveInright;
+    animation: moveInright 1s ease-in-out;
 }
 
 @keyframes moveInleft {
     0% {
         opacity: 0;
         transform: translate(-100px);
+    }
+
+    60% {
+        transform: rotate(120deg);
     }
 
     80% {
@@ -99,7 +108,11 @@ body{
 @keyframes moveInright {
     0% {
         opacity: 0;
-        transform: translate(100px);
+        transform: translate(100px) ;
+    }
+
+    60% {
+        
     }
 
     80% {
@@ -110,3 +123,5 @@ body{
         opacity: 1;
         transform: translate(0);
     }
+
+}
