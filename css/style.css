@@ -55,13 +55,14 @@ body{
     top: 40%;   /* top and left is in relation to the parent element */
     left: 50%;
     transform: translate(-50%,-50%);  /* 50% is relative to the elements width and height*/
-    
+    text-align: center;
 }
 
 .heading-primary {
     color: #fff;
     text-transform: uppercase;
     backface-visibility: hidden; /* back part of the element is not visible*/
+    margin-bottom: 60px;
 }
 
 .heading-primary-main {
@@ -131,7 +132,16 @@ body{
     text-transform: uppercase;
     text-decoration: none;
     padding: 15px 40px;
-    display: inline-block;
+    /* includes the padding */
+    display: inline-block; 
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn:active {
+    transform: translateY(-1px);
 }
 
 .btn-white {
